@@ -5,15 +5,16 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    text-align: center;
+    text-align: left; /* Cambiado a izquierda */
 }
 
 /* Encabezado */
 header {
-    background-color: #4CAF50; /* Verde para el encabezado */
+    background-color: #4CAF50; /* Verde */
     color: white;
     padding: 20px 0;
     position: relative;
+    text-align: center; /* Centrado de la frase */
 }
 
 header h1 {
@@ -29,10 +30,10 @@ header h1 {
     background-color: white;
     color: #4CAF50;
     border: 1px solid #4CAF50;
-    padding: 8px 12px;
+    padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
 }
 
@@ -47,41 +48,62 @@ main {
 }
 
 h2 {
-    font-size: 20px;
-    color: #4CAF50;
+    font-size: 22px;
+    color: #4CAF50; /* Verde */
+    margin-bottom: 20px;
+    text-align: center; /* Centrado de la palabra Trompeta */
+}
+
+#contenido {
+    padding: 20px;
+}
+
+/* Estilos para cada canción */
+.cancion {
     margin-bottom: 20px;
 }
 
-p {
-    font-size: 16px;
-    line-height: 1.5;
+/* Encabezado de la canción */
+.encabezado {
+    margin-bottom: 5px; /* Reducido el margen entre el título de la canción y los detalles */
 }
 
-/* Menú de botones en la página principal */
-#menu {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    margin-top: 20px;
+.encabezado h3 {
+    font-size: 20px;
+    color: #4CAF50;
+    font-weight: bold;
+    margin: 0; /* Eliminado margen */
 }
 
-/* Botones estilo enlace */
-.boton {
-    display: inline-block;
-    padding: 15px 30px;
+.encabezado p {
+    font-size: 14px;
+    margin: 3px 0; /* Reducido el espacio entre la nota musical, ritmo y tiempo */
+}
+
+/* Estilo para las estrofas */
+.estrofa {
+    margin-top: 10px; /* Reducido el margen entre las estrofas */
+    padding-left: 20px;
+}
+
+.estrofa h4 {
     font-size: 16px;
-    text-decoration: none;
-    background-color: #007BFF; /* Azul para los botones */
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    color: #4CAF50; /* Verde */
+    margin-bottom: 5px; /* Reducido el margen */
+}
+
+.estrofa .notas {
+    font-size: 14px;
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* Línea separadora */
+.linea-separadora {
     border: none;
-    cursor: pointer;
-}
-
-.boton:hover {
-    background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+    border-top: 1px dotted #4CAF50; /* Línea punteada verde */
+    margin: 15px 0;
 }
 
 /* Pie de página */
