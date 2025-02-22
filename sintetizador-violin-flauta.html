@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Himnario - Sintetizador, Violín y Flauta</title>
+    <title>Himnario - Sintetizador/Violín/Piano</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function eliminarTildes(str) {
+            return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        }
+
+        function buscarCanciones() {
+            let input = document.getElementById("buscador");
+            let filter = eliminarTildes(input.value.toUpperCase());
+            let canciones = document.getElementsByClassName("cancion");
+
+            for (let i = 0; i < canciones.length; i++) {
+                let titulo = canciones[i].getElementsByTagName("h3")[0];
+                let lineaSeparadora = canciones[i].nextElementSibling;
+                
+                if (titulo) {
+                    let txtValue = eliminarTildes(titulo.textContent.toUpperCase());
+                    if (txtValue.indexOf(filter) > -1) {
+                        canciones[i].style.display = "";
+                        if (lineaSeparadora) lineaSeparadora.style.display = "";
+                    } else {
+                        canciones[i].style.display = "none";
+                        if (lineaSeparadora) lineaSeparadora.style.display = "none";
+                    }
+                }
+            }
+        }
+
+        function borrarBuscador() {
+            document.getElementById("buscador").value = "";
+            buscarCanciones();
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -12,20 +44,132 @@
         <h1>Himnario PMLV</h1>
     </header>
     <main>
-        <h2 style="text-align: center;">Violín - Flauta - Sintetizador</h2>
-        
+        <h2 style="text-align: center;">Sintetizador / Violín / Piano</h2>
+
+        <input type="text" id="buscador" onkeyup="buscarCanciones()" placeholder="Buscar canción..." style="width: 80%; padding: 10px; font-size: 16px; margin-bottom: 20px;">
+        <button onclick="borrarBuscador()" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">Borrar</button>
+
         <div id="contenido">
-            <!-- Canción 1 -->
+            <!-- Canción 1: "Grande es tu fidelidad" -->
             <div class="cancion">
                 <div class="encabezado">
-                    <h3>Himno de Alabanza 1</h3>
+                    <h3>Grande es tu fidelidad</h3>
                     <p><strong>Nota Musical:</strong> C Mayor</p>
-                    <p><strong>Ritmo:</strong> 3/4</p>
-                    <p><strong>Tiempo:</strong> Allegro</p>
+                    <p><strong>Ritmo:</strong> 4/4</p>
+                    <p><strong>Tiempo:</strong> Moderato</p>
+                    <p><strong>BPM:</strong> 80</p> <!-- Agregado BPM -->
+                    <p><strong>Escala:</strong> C Mayor</p> <!-- Agregado Escala -->
                 </div>
                 <div class="estrofa">
                     <h4>Estrofa 1</h4>
-                    <p class="notas">C - E - G - A - B - G - E</p>
+                    <p class="notas">C - G - Am - F - G - C</p>
+                    <p class="notas">F - C - G - C - G - F</p>
+                    <p class="notas">C - Am - Dm - G - C</p>
+                    <p class="notas">F - G - C - G - F - C</p>
+                </div>
+                <div class="estrofa">
+                    <h4>Estrofa 2</h4>
+                    <p class="notas">C - G - Am - F - G - C</p>
+                    <p class="notas">F - C - G - C - G - F</p>
+                    <p class="notas">C - Am - Dm - G - C</p>
+                    <p class="notas">F - G - C - G - F - C</p>
+                </div>
+            </div>
+            <hr class="linea-separadora">
+
+            <!-- Canción 2: "Alabaré" -->
+            <div class="cancion">
+                <div class="encabezado">
+                    <h3>Alabaré</h3>
+                    <p><strong>Nota Musical:</strong> G Mayor</p>
+                    <p><strong>Ritmo:</strong> 3/4</p>
+                    <p><strong>Tiempo:</strong> Allegro</p>
+                    <p><strong>BPM:</strong> 120</p> <!-- Agregado BPM -->
+                    <p><strong>Escala:</strong> G Mayor</p> <!-- Agregado Escala -->
+                </div>
+                <div class="estrofa">
+                    <h4>Estrofa 1</h4>
+                    <p class="notas">G - D - C - D - G</p>
+                    <p class="notas">C - D - G - C - D</p>
+                    <p class="notas">G - D - C - D - G</p>
+                    <p class="notas">C - G - D - G</p>
+                </div>
+                <div class="estrofa">
+                    <h4>Estrofa 2</h4>
+                    <p class="notas">G - D - C - D - G</p>
+                    <p class="notas">C - D - G - C - D</p>
+                    <p class="notas">G - D - C - D - G</p>
+                    <p class="notas">C - G - D - G</p>
+                </div>
+            </div>
+            <hr class="linea-separadora">
+
+            <!-- Canción 3: "Santo, Santo, Santo" -->
+            <div class="cancion">
+                <div class="encabezado">
+                    <h3>Santo, Santo, Santo</h3>
+                    <p><strong>Nota Musical:</strong> D Mayor</p>
+                    <p><strong>Ritmo:</strong> 4/4</p>
+                    <p><strong>Tiempo:</strong> Andante</p>
+                    <p><strong>BPM:</strong> 60</p> <!-- Agregado BPM -->
+                    <p><strong>Escala:</strong> D Mayor</p> <!-- Agregado Escala -->
+                </div>
+                <div class="estrofa">
+                    <h4>Estrofa 1</h4>
+                    <p class="notas">D - A - Bm - G - D</p>
+                    <p class="notas">G - D - A - G - D</p>
+                    <p class="notas">Bm - G - D - A - D</p>
+                    <p class="notas">A - D - G - D - A</p>
+                </div>
+                <div class="estrofa">
+                    <h4>Estrofa 2</h4>
+                    <p class="notas">D - A - Bm - G - D</p>
+                    <p class="notas">G - D - A - G - D</p>
+                    <p class="notas">Bm - G - D - A - D</p>
+                    <p class="notas">A - D - G - D - A</p>
+                </div>
+            </div>
+            <hr class="linea-separadora">
+
+            <!-- Canción 4: "Te doy gloria" -->
+            <div class="cancion">
+                <div class="encabezado">
+                    <h3>Te doy gloria</h3>
+                    <p><strong>Nota Musical:</strong> F Mayor</p>
+                    <p><strong>Ritmo:</strong> 4/4</p>
+                    <p><strong>Tiempo:</strong> Moderato</p>
+                    <p><strong>BPM:</strong> 90</p> <!-- Agregado BPM -->
+                    <p><strong>Escala:</strong> F Mayor</p> <!-- Agregado Escala -->
+                </div>
+                <div class="estrofa">
+                    <h4>Estrofa 1</h4>
+                    <p class="notas">F - C - Dm - G - F</p>
+                    <p class="notas">Bb - F - C - Dm - G</p>
+                    <p class="notas">F - C - Dm - G - F</p>
+                    <p class="notas">Bb - F - C - F</p>
+                </div>
+                <div class="estrofa">
+                    <h4>Estrofa 2</h4>
+                    <p class="notas">F - C - Dm - G - F</p>
+                    <p class="notas">Bb - F - C - Dm - G</p>
+                    <p class="notas">F - C - Dm - G - F</p>
+                    <p class="notas">Bb - F - C - F</p>
+                </div>
+            </div>
+            <hr class="linea-separadora">
+
+            <!-- Canción 5: "Bendito y alabado seas" -->
+            <div class="cancion">
+                <div class="encabezado">
+                    <h3>Bendito y alabado seas</h3>
+                    <p><strong>Nota Musical:</strong> E Mayor</p>
+                    <p><strong>Ritmo:</strong> 3/4</p>
+                    <p><strong>Tiempo:</strong> Allegro</p>
+                    <p><strong>BPM:</strong> 100</p> <!-- Agregado BPM -->
+                    <p><strong>Escala:</strong> E Mayor</p> <!-- Agregado Escala -->
+                </div>
+                <div class="estrofa">
+                    <h4>Estrofa 1</h4><p class="notas">C - E - G - A - B - G - E</p>
                     <p class="notas">D - C - G - A - B - C</p>
                     <p class="notas">F - A - G - E - D - C</p>
                     <p class="notas">E - F - G - A - B - C</p>
@@ -48,8 +192,11 @@
             <hr class="linea-separadora">
             
             <!-- Añadir más canciones según sea necesario -->
-            
+       
         </div>
     </main>
+    <footer>
+        <p>© 2025 Himnario PMLV</p>
+    </footer>
 </body>
 </html>
