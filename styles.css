@@ -117,3 +117,33 @@ footer {
     margin-top: 50px;
     font-size: 14px;
 }
+
+/* Estilos para los botones del menú (Index) */
+#menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre botones */
+    margin-top: 40px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 20px 40px; /* Tamaño de los botones */
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff; /* Texto blanco */
+    border: 2px solid #4CAF50; /* Borde verde */
+    border-radius: 25px; /* Bordes redondeados */
+    background-color: #4CAF50; /* Fondo verde */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efecto al pasar el cursor */
+    width: 200px;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color: #333; /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
+    border: 2px solid #333; /* Borde gris oscuro */
+}

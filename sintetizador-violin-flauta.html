@@ -3,20 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piano - Violín - Flauta</title>
+    <title>Himnario - Sintetizador, Violín y Flauta</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <button id="volver" onclick="window.location.href='index.html'">⬅ Menú</button>
         <h1>Himnario PMLV</h1>
     </header>
     <main>
-        <a id="volver" href="index.html">Volver</a>
-        <h2>Piano - Violín - Flauta</h2>
-        <p>Próximamente podrás ver los himnos de estas categorías.</p>
+        <h2 style="text-align: center;">Violín - Flauta - Sintetizador</h2>
+        
+        <div id="contenido">
+            <!-- Canción 1 -->
+            <div class="cancion">
+                <div class="encabezado">
+                    <h3>Himno de Alabanza 1</h3>
+                    <p><strong>Nota Musical:</strong> C Mayor</p>
+                    <p><strong>Ritmo:</strong> 3/4</p>
+                    <p><strong>Tiempo:</strong> Allegro</p>
+                </div>
+                <div class="estrofa">
+                    <h4>Estrofa 1</h4>
+                    <p class="notas">C - E - G - A - B - G - E</p>
+                    <p class="notas">D - C - G - A - B - C</p>
+                    <p class="notas">F - A - G - E - D - C</p>
+                    <p class="notas">E - F - G - A - B - C</p>
+                </div>
+                <div class="estrofa">
+                    <h4>Estrofa 2</h4>
+                    <p class="notas">A - B - G - C - D - F</p>
+                    <p class="notas">F - E - C - G - A - B</p>
+                    <p class="notas">C - D - E - F - G - A</p>
+                    <p class="notas">D - C - F - G - E - A</p>
+                </div>
+                <div class="estrofa">
+                    <h4>Estrofa 3</h4>
+                    <p class="notas">B - C - G - E - D - A</p>
+                    <p class="notas">G - F - A - D - C - E</p>
+                    <p class="notas">F - E - D - C - G - B</p>
+                    <p class="notas">C - D - G - A - F - B</p>
+                </div>
+            </div>
+            <hr class="linea-separadora">
+            
+            <!-- Añadir más canciones según sea necesario -->
+            
+        </div>
     </main>
-    <footer>
-        <p>© 2025 Himnario PMLV</p>
-    </footer>
 </body>
 </html>
