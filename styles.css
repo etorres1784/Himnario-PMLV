@@ -121,7 +121,8 @@ footer {
 /* Estilos para los botones del menú (Index) */
 #menu {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Cambiado a columna para los botones verticales */
+    align-items: center; /* Centrado de los botones */
     gap: 20px; /* Espaciado entre botones */
     margin-top: 40px;
 }
