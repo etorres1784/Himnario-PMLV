@@ -44,28 +44,28 @@ header h1 {
 
 /* Contenido principal */
 main {
-    padding: 20px;
+    padding: 0px;
 }
 
 h2 {
     font-size: 15px;
     color: #4CAF50; /* Verde */
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     text-align: center; /* Centrado de la palabra Trompeta */
 }
 
 #contenido {
-    padding: 20px;
+    padding: 0px;
 }
 
 /* Estilos para cada canción */
 .cancion {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 /* Encabezado de la canción */
 .encabezado {
-    margin-bottom: 5px; /* Reducido el margen entre el título de la canción y los detalles */
+    margin-bottom: 0px; /* Reducido el margen entre el título de la canción y los detalles */
 }
 
 .encabezado h3 {
@@ -77,12 +77,12 @@ h2 {
 
 .encabezado p {
     font-size: 10px;
-    margin: 3px 0; /* Reducido el espacio entre la nota musical, ritmo y tiempo */
+    margin: 0px 0; /* Reducido el espacio entre la nota musical, ritmo y tiempo */
 }
 
 /* Estilo para las estrofas */
 .estrofa {
-    margin-top: 10px; /* Reducido el margen entre las estrofas */
+    margin-top: 0px; /* Reducido el margen entre las estrofas */
     padding-left: 0px;
 }
 
@@ -105,7 +105,7 @@ h2 {
     font-size: 15px;
     font-weight: bold;
     color: #4CAF50; /* Letra Verde */
-    margin-bottom: 5px; /* Reducido el margen */
+    margin-bottom: 0px; /* Reducido el margen */
     padding-left: 0px;
 }
 
