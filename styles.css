@@ -69,35 +69,64 @@ h2 {
 }
 
 .encabezado h3 {
-    font-size: 20px;
+    font-size: 25px;
     color: #4CAF50;
     font-weight: bold;
     margin: 0; /* Eliminado margen */
 }
 
 .encabezado p {
-    font-size: 14px;
+    font-size: 15px;
     margin: 3px 0; /* Reducido el espacio entre la nota musical, ritmo y tiempo */
 }
 
 /* Estilo para las estrofas */
 .estrofa {
     margin-top: 10px; /* Reducido el margen entre las estrofas */
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
-.estrofa h4 {
-    font-size: 16px;
+.estrofa h5 {
+    font-size: 15px;
     font-weight: bold;
-    color: #4CAF50; /* Verde */
+
+    color: #000000; /* LETRAS NEGRAS	 */
+    margin-bottom: -20px; /* Reducido el margen */
+
+    background-color: #d3d3d3; /* Color gris claro */
+
+}
+
+
+
+
+.estrofa h4 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #4CAF50; /* Letra Verde */
     margin-bottom: 5px; /* Reducido el margen */
+    padding-left: 20px;
 }
 
 .estrofa .notas {
-    font-size: 14px;
+    font-family: courier new;
+    font-size: 15px;
     margin: 0;
-    padding-left: 20px;
+    padding-left: 40px;
 }
+
+
+
+
+
+.guion {
+    color: transparent;
+}
+
+
+
+
+
 
 /* Línea separadora */
 .linea-separadora {
@@ -147,4 +176,9 @@ footer {
     background-color: #333; /* Fondo gris oscuro */
     color: white; /* Texto blanco */
     border: 2px solid #333; /* Borde gris oscuro */
+}
+
+
+.guion {
+    color: transparent;
 }
