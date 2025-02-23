@@ -86,12 +86,13 @@ h2 {
     padding-left: 0px;
 }
 
+/* TITULO */
 .estrofa h5 {
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bold;
 
     color: #000000; /* LETRAS NEGRAS	 */
-    margin-bottom: -20px; /* Reducido el margen */
+    margin-bottom: 0px; /* Reducido el margen */
 
     background-color: #d3d3d3; /* Color gris claro */
 
@@ -99,20 +100,20 @@ h2 {
 
 
 
-
+/*SUBTITULO*/
 .estrofa h4 {
     font-size: 15px;
     font-weight: bold;
     color: #4CAF50; /* Letra Verde */
     margin-bottom: 5px; /* Reducido el margen */
-    padding-left: 20px;
+    padding-left: 0px;
 }
 
 .estrofa .notas {
     font-family: courier new;
     font-size: 10px;
     margin: 0;
-    padding-left: 40px;
+    padding-left: 0px;
 }
 
 
