@@ -183,3 +183,28 @@ footer {
 .guion {
     color: transparent;
 }
+
+
+/* Encabezado de la canción */
+.encabezado h2 {
+    text-align: left; /* Alineado a la izquierda */
+}
+.encabezado h3 {
+    text-align: left; /* Alineado a la izquierda */
+}
+.encabezado h4 {
+    text-align: left; /* Alineado a la izquierda */
+}
+.encabezado h5 {
+    text-align: left; /* Alineado a la izquierda */
+}
+
+/* Encabezado detalles */
+.encabezado p {
+    text-align: left; /* Alineado a la izquierda */
+}
+
+/* Estilo para las estrofas */
+.estrofa {
+    text-align: left; /* Alineado a la izquierda */
+}
