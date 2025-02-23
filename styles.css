@@ -19,7 +19,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 15px;
 }
 
 /* Botón de volver */
@@ -33,7 +33,7 @@ header h1 {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 10px;
     text-decoration: none;
 }
 
@@ -48,7 +48,7 @@ main {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 15px;
     color: #4CAF50; /* Verde */
     margin-bottom: 20px;
     text-align: center; /* Centrado de la palabra Trompeta */
@@ -69,14 +69,14 @@ h2 {
 }
 
 .encabezado h3 {
-    font-size: 25px;
+    font-size: 15px;
     color: #4CAF50;
     font-weight: bold;
     margin: 0; /* Eliminado margen */
 }
 
 .encabezado p {
-    font-size: 15px;
+    font-size: 10px;
     margin: 3px 0; /* Reducido el espacio entre la nota musical, ritmo y tiempo */
 }
 
@@ -87,7 +87,7 @@ h2 {
 }
 
 .estrofa h5 {
-    font-size: 10px;
+    font-size: 17px;
     font-weight: bold;
 
     color: #000000; /* LETRAS NEGRAS	 */
@@ -101,7 +101,7 @@ h2 {
 
 
 .estrofa h4 {
-    font-size: 15px;
+    font-size: 7px;
     font-weight: bold;
     color: #4CAF50; /* Letra Verde */
     margin-bottom: 5px; /* Reducido el margen */
@@ -110,7 +110,7 @@ h2 {
 
 .estrofa .notas {
     font-family: courier new;
-    font-size: 15px;
+    font-size: 7px;
     margin: 0;
     padding-left: 40px;
 }
