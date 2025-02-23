@@ -87,7 +87,7 @@ h2 {
 }
 
 .estrofa h5 {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;
 
     color: #000000; /* LETRAS NEGRAS	 */
@@ -101,7 +101,7 @@ h2 {
 
 
 .estrofa h4 {
-    font-size: 7px;
+    font-size: 15px;
     font-weight: bold;
     color: #4CAF50; /* Letra Verde */
     margin-bottom: 5px; /* Reducido el margen */
@@ -110,7 +110,7 @@ h2 {
 
 .estrofa .notas {
     font-family: courier new;
-    font-size: 7px;
+    font-size: 10px;
     margin: 0;
     padding-left: 40px;
 }
