@@ -8,7 +8,10 @@ body {
     text-align: left; /* Cambiado a izquierda */
 }
 
-/* Encabezado */
+
+
+
+/* ENCABEZADO*/
 header {
     background-color: #4CAF50; /* Verde */
     color: white;
@@ -19,8 +22,12 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 15px;
+    font-size: 24px;
 }
+
+
+
+
 
 /* Botón de volver */
 #volver {
@@ -33,7 +40,7 @@ header h1 {
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 10px;
+    font-size: 16px;
     text-decoration: none;
 }
 
@@ -42,83 +49,99 @@ header h1 {
     color: white;
 }
 
+
+
+
+
 /* Contenido principal */
 main {
-    padding: 0px;
+    padding: 10px;
 }
 
 h2 {
-    font-size: 15px;
+    font-size: 22px;
     color: #4CAF50; /* Verde */
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     text-align: center; /* Centrado de la palabra Trompeta */
 }
 
 #contenido {
-    padding: 0px;
+    padding: 10px;
 }
 
 /* Estilos para cada canción */
 .cancion {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 /* Encabezado de la canción */
 .encabezado {
-    margin-bottom: 0px; /* Reducido el margen entre el título de la canción y los detalles */
+    margin-bottom: 5px; /* Reducido el margen entre el título de la canción y los detalles */
 }
 
+
+
+
+/*NOMBRE DE LA CANCION*/
 .encabezado h3 {
-    font-size: 15px;
+    font-size: 25px;
     color: #4CAF50;
     font-weight: bold;
     margin: 0; /* Eliminado margen */
 }
 
 .encabezado p {
-    font-size: 10px;
-    margin: 0px 0; /* Reducido el espacio entre la nota musical, ritmo y tiempo */
+    font-size: 15px;
+    margin: 3px 0; /* Reducido el espacio entre la nota musical, ritmo y tiempo */
 }
+
+
+
 
 /* Estilo para las estrofas */
 .estrofa {
-    margin-top: 0px; /* Reducido el margen entre las estrofas */
+    margin-top: 5px; /* Reducido el margen entre las estrofas */
     padding-left: 0px;
+
+ 
 }
 
-/* TITULO */
-.estrofa h5 {
-    font-size: 10px;
-    font-weight: bold;
-
-    color: #000000; /* LETRAS NEGRAS	 */
-    margin-bottom: 0px; /* Reducido el margen */
-
-    background-color: #d3d3d3; /* Color gris claro */
-
-}
 
 
 
 /*SUBTITULO*/
 .estrofa h4 {
-    font-size: 10px;
+    font-size: 15px;
     font-weight: bold;
     color: #4CAF50; /* Letra Verde */
-    margin-bottom: 0px; /* Reducido el margen */
-    padding-left: 0px;
+    margin-bottom: 5px; /* Reducido el margen */
+    padding-left: 15px;
+    padding: 10px 0;
+    margin: 9px 0;
+}
+
+
+
+
+
+/*TITULO*/
+.estrofa h5 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000; /* LETRAS NEGRAS */
+    margin-bottom: -20px; /* Reducido el margen */
+    background-color: #d3d3d3; /* Color gris claro */
+    padding: 10px 0;
 }
 
 .estrofa .notas {
     font-family: courier new;
-    font-size: 10px;
+    font-size: 20px;
     margin: 0;
-    padding-left: 0px;
+    padding-left: 5px;
+    padding: 1px 0;
+
 }
-
-
-
-
 
 .guion {
     color: transparent;
@@ -136,6 +159,10 @@ h2 {
     margin: 15px 0;
 }
 
+
+
+
+
 /* Pie de página */
 footer {
     background-color: #333;
@@ -147,6 +174,9 @@ footer {
     margin-top: 50px;
     font-size: 14px;
 }
+
+
+
 
 /* Estilos para los botones del menú (Index) */
 #menu {
@@ -177,41 +207,4 @@ footer {
     background-color: #333; /* Fondo gris oscuro */
     color: white; /* Texto blanco */
     border: 2px solid #333; /* Borde gris oscuro */
-}
-
-
-
-
-
-/* Encabezado de la canción */
-.encabezado h3 {
-    text-align: left;
-    margin-left: 5px; /* Espaciado a la izquierda */
-}
-
-/* Detalles del encabezado */
-.encabezado p {
-    text-align: left;
-    margin-left: 5px; /* Espaciado a la izquierda */
-}
-
-/* Estilo para las estrofas */
-.estrofa {
-    text-align: left;
-    margin-left: 5px; /* Espaciado a la izquierda */
-}
-
-/* Título de la estrofa */
-.estrofa h5 {
-    margin-left: 5px;
-}
-
-/* Subtítulo de la estrofa */
-.estrofa h4 {
-    margin-left: 5px;
-}
-
-/* Notas de la estrofa */
-.estrofa .notas {
-    margin-left: 5px;
 }
