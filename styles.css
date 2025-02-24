@@ -180,31 +180,38 @@ footer {
 }
 
 
-.guion {
-    color: transparent;
-}
+
 
 
 /* Encabezado de la canción */
-.encabezado h2 {
-    text-align: left; /* Alineado a la izquierda */
-}
 .encabezado h3 {
-    text-align: left; /* Alineado a la izquierda */
-}
-.encabezado h4 {
-    text-align: left; /* Alineado a la izquierda */
-}
-.encabezado h5 {
-    text-align: left; /* Alineado a la izquierda */
+    text-align: left;
+    margin-left: 5px; /* Espaciado a la izquierda */
 }
 
-/* Encabezado detalles */
+/* Detalles del encabezado */
 .encabezado p {
-    text-align: left; /* Alineado a la izquierda */
+    text-align: left;
+    margin-left: 5px; /* Espaciado a la izquierda */
 }
 
 /* Estilo para las estrofas */
 .estrofa {
-    text-align: left; /* Alineado a la izquierda */
+    text-align: left;
+    margin-left: 5px; /* Espaciado a la izquierda */
+}
+
+/* Título de la estrofa */
+.estrofa h5 {
+    margin-left: 5px;
+}
+
+/* Subtítulo de la estrofa */
+.estrofa h4 {
+    margin-left: 5px;
+}
+
+/* Notas de la estrofa */
+.estrofa .notas {
+    margin-left: 5px;
 }
