@@ -116,8 +116,8 @@ h2 {
     color: #4CAF50; /* Letra Verde */
     margin-bottom: 5px; /* Reducido el margen */
     padding-left: 15px;
-    padding: 10px 0;
-    margin: 9px 0;
+    padding: 5px 0;
+    margin: 15px 0;
 }
 
 
@@ -126,12 +126,12 @@ h2 {
 
 /*TITULO*/
 .estrofa h5 {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     color: #000000; /* LETRAS NEGRAS */
     margin-bottom: -20px; /* Reducido el margen */
     background-color: #d3d3d3; /* Color gris claro */
-    padding: 10px 0;
+    padding: 2px 0;
 }
 
 .estrofa .notas {
