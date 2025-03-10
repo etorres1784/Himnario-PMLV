@@ -56,6 +56,7 @@ header h1 {
 /* Contenido principal */
 main {
     padding: 10px;
+
 }
 
 h2 {
@@ -67,16 +68,19 @@ h2 {
 
 #contenido {
     padding: 10px;
+
 }
 
 /* Estilos para cada canción */
 .cancion {
     margin-bottom: 10px;
+
 }
 
 /* Encabezado de la canción */
 .encabezado {
     margin-bottom: 5px; /* Reducido el margen entre el título de la canción y los detalles */
+
 }
 
 
@@ -88,6 +92,9 @@ h2 {
     color: #4CAF50;
     font-weight: bold;
     margin: 0; /* Eliminado margen */
+
+
+
 }
 
 .encabezado p {
@@ -111,12 +118,12 @@ h2 {
 
 /*SUBTITULO*/
 .estrofa h4 {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     color: #4CAF50; /* Letra Verde */
-    margin-bottom: 5px; /* Reducido el margen */
+    margin-bottom: 0px; /* Reducido el margen */
     padding-left: 15px;
-    padding: 5px 0;
+    padding: 1px 0;
     margin: 15px 0;
 }
 
@@ -126,12 +133,12 @@ h2 {
 
 /*TITULO*/
 .estrofa h5 {
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
     color: #000000; /* LETRAS NEGRAS */
     margin-bottom: -20px; /* Reducido el margen */
-    background-color: #d3d3d3; /* Color gris claro */
-    padding: 2px 0;
+ 
+    padding: 5px 0;
 }
 
 
@@ -140,10 +147,10 @@ h2 {
 
 .estrofa .notas {
     font-family: courier new;
-    font-size: 13px;
+    font-size: 20px;
     margin: 0;
     padding-left: 5px;
-    padding: 1px 0;
+    padding: 0px 0;
 
 }
 
@@ -211,4 +218,11 @@ footer {
     background-color: #333; /* Fondo gris oscuro */
     color: white; /* Texto blanco */
     border: 2px solid #333; /* Borde gris oscuro */
+}
+
+
+/*TAMAÑO DEL #*/
+.pequeno {
+    font-size: 70%;
+    vertical-align: super;
 }
