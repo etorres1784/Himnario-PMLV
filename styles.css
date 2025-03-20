@@ -98,7 +98,7 @@ h2 {
 }
 
 .encabezado p {
-    font-size: 12px;
+    font-size: 15px;
     margin: 3px 0; /* Reducido el espacio entre la nota musical, ritmo y tiempo */
 }
 
@@ -118,12 +118,12 @@ h2 {
 
 /*SUBTITULO*/
 .estrofa h4 {
-    font-size: 13px;
+    font-size: 20px;
     font-weight: bold;
     color: #4CAF50; /* Letra Verde */
-    margin-bottom: 5px; /* Reducido el margen */
+    margin-bottom: 0px; /* Reducido el margen */
     padding-left: 15px;
-    padding: 5px 0;
+    padding: 1px 0;
     margin: 15px 0;
 }
 
@@ -133,12 +133,12 @@ h2 {
 
 /*TITULO*/
 .estrofa h5 {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     color: #000000; /* LETRAS NEGRAS */
     margin-bottom: -20px; /* Reducido el margen */
-    background-color: #ebebeb; /* Color gris claro */
-    padding: 2px 0;
+ 
+    padding: 5px 0;
 }
 
 
@@ -147,10 +147,10 @@ h2 {
 
 .estrofa .notas {
     font-family: courier new;
-    font-size: 13px;
+    font-size: 20px;
     margin: 0;
     padding-left: 5px;
-    padding: 1px 0;
+    padding: 0px 0;
 
 }
 
